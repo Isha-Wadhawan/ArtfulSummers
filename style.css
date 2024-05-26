@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Potta+One&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Ultra&display=swap');
+
+body {
+    font-family: 'Comfortaa', cursive;
+    background-color: #f2c6de;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+header {
+    background-color: #95b5cf;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h2 {
+    font-family: cursive;
+    color: #48044c;
+}
+
+header h1 {
+    font-family: "Potta One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 5px;
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-bottom: 3px;
+}
+
+header a {
+    background-color: #f7d9c4;
+    padding: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 30px;
+    border: 1px solid #ffb078;
+    color: rgb(93, 20, 8);
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+header a i {
+    margin-right: 5px;
+    color: #ef55aa;
+}
+
+nav {
+    background-color: #dbcdf0;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box; /* Include padding and borders in width calculation */
+}
+
+#gallery {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    padding: 20px 0;
+}
+.gallery-slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .gallery-carousel {
+    display: flex;
+    transition: transform 0.5s ease; /* Add smooth transition for scrolling */
+  }
+  
+  .gallery-item {
+    flex: 0 0 auto;
+    margin-right: 10px; /* Adjust spacing between items */
+  }
+  
+  .gallery-item img {
+    max-width: 100%;
+    border: 3px solid #e384b8;
+  }
+  
+  button.prev,
+  button.next {
+    background-color: #48044c;
+    color: white;
+    border: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  
+  button.prev {
+    left: 10px;
+  }
+  
+  button.next {
+    right: 10px;
+  }
+  
+  button.prev:hover,
+  button.next:hover {
+    background-color: #333;
+  }
+  
+  #activities {
+    background-color: #fff3f9;
+    padding: 20px;
+    text-align: center;
+}
+
+#activities h2 {
+    font-family: cursive;
+    color: #48044c;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.activity-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.activity-card {
+    background-color: #f7d9c4;
+    border: 1px solid #ffb078;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.activity-card img {
+    width: 100%;
+    height: auto;
+}
+
+.activity-card h3 {
+    font-family: 'Poppins', sans-serif;
+    color: #48044c;
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.activity-card:hover {
+    transform: scale(1.05);
+}
+.whatsapp-button {
+    display: inline-block;
+    background-color: #ddf2d1;
+    color: #407820;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.whatsapp-button i {
+    margin-right: 8px;
+}
+
+.whatsapp-button:hover {
+    background-color: #1da851;
+    color: #ddf2d1;
+}
+
+
+.showcase-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.showcase-item {
+    width: 300px;
+    text-align: center;
+    border: 2px solid #e384b8;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: white;
+}
+
+.showcase-item img, .showcase-item video {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.showcase-item h3 {
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+    color: #48044c;
+}
+
+.whatsapp-button {
+    display: inline-block;
+    background-color: #25d366;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.whatsapp-button i {
+    margin-right: 8px;
+}
+
+.whatsapp-button:hover {
+    background-color: #1da851;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 1200px) {
+    header h1 {
+        font-size: 2.2em; /* Adjust font size for medium-sized screens */
+    }
+}
+
+@media (max-width: 992px) {
+    header h1 {
+        font-size: 2em; /* Adjust font size for tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8em; /* Adjust font size for smaller tablets */
+    }
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column; /* Stack navigation items vertically */
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    #gallery .gallery-item {
+        flex: 1 1 100%; /* Make gallery items occupy full width */
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em; /* Adjust font size for small screens */
+    }
+
+    .showcase-item {
+        width: 90%; /* Make showcase items occupy full width on small screens */
+    }
+}
+
+#contact p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+#contact i {
+    margin-right: 10px;
+    color: rgb(251, 20, 20);
+}
+
+footer {
+    background-color: #c6def1;
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.lightbox-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+.insta-button {
+    display: inline-block;
+    background-color: #e1306c;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+  }
+  
+  .insta-button i {
+    margin-right: 10px;
+  }
+  
+  .insta-button:hover {
+    background-color: #ff4b8a;
+  }
+  
+/* Media Queries for responsiveness */
+@media (max-width: 1200px) {
+    header h1 {
+        font-size: 2.2em; /* Adjust font size for medium-sized screens */
+    }
+}
+
+@media (max-width: 992px) {
+    header h1 {
+        font-size: 2em; /* Adjust font size for tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8em; /* Adjust font size for smaller tablets */
+    }
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column; /* Stack navigation items vertically */
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    #gallery .gallery-item {
+        flex: 1 1 100%; /* Make gallery items occupy full width */
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em; /* Further adjust font size for smaller screens */
+    }
+
+    section {
+        padding: 10px; /* Reduce section padding for smaller screens */
+    }
+
+    button.prev, button.next {
+        top: 60%;
+    }
+}
