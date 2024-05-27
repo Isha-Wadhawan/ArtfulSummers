@@ -39,7 +39,9 @@
 
 
 
-
+#videos{
+    background-color: #fff;
+}
 body {
     font-family: 'Comfortaa', cursive;
     background-color: #f2c6de;
