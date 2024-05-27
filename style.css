@@ -1,5 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Potta+One&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Ultra&display=swap');
 
+#container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+.popper {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #ff0;
+    border-radius: 50%;
+    animation: fly 2s linear forwards, vanish 2s linear forwards;
+}
+
+@keyframes fly {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(calc(var(--random-x) * 1vw - 50vw), calc(var(--random-y) * -1vh));
+    }
+}
+
+@keyframes vanish {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+
+
 body {
     font-family: 'Comfortaa', cursive;
     background-color: #f2c6de;

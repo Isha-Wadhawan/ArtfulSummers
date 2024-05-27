@@ -81,3 +81,27 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const container = document.getElementById("container");
+  for (let i = 0; i < 50; i++) {
+    const popper = document.createElement("div");
+    popper.classList.add("popper");
+    popper.style.left = "50vw"; // Center horizontally
+    popper.style.bottom = "0"; // Position at the bottom
+    popper.style.setProperty("--random-x", Math.random() * 100); // Random horizontal destination
+    popper.style.setProperty("--random-y", Math.random() * 100); // Random vertical height
+    popper.style.animationDelay = `${Math.random()}s`;
+    popper.style.backgroundColor = getRandomColor();
+    container.appendChild(popper);
+  }
+});
+
+function getRandomColor() {
+  const letters = "0123456789ABCDEF";
+  let color = "#";
+  for (let i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+}
